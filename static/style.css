@@ -1,0 +1,21 @@
+#search {
+    width: 100%;
+    border-radius: 5px;
+    padding: 7px;
+    border: none;
+    background-color: rgb(108, 143, 219);
+}
+input::placeholder {
+    color: white;
+}
+
+body{
+    background-color: rgb(65, 124, 250);
+}
+.card1{
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.2);
+}
+.card2{
+        background-color: rgb(118, 156, 238);
+}

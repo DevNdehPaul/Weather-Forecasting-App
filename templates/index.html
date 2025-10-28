@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="../static/bootstrap.css">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6"><br><br><br>
+                <h1 class="text-center text-white" style="font-weight: bolder;"><span></span> Weather Forecast</h1><br>
+        <div class="card card1">
+            <div class="container"><br>
+                <form action="{{url_for('weather')}}" method="POST">
+                    <div class="row">
+                    <div class="col-8">
+                        <input type="text" placeholder="Enter city name" id="search" name="city" class="text-white"">
+                    </div>
+                    <div class="col-4">
+                        <input type="submit" value="Get Weather" class="btn bg-primary text-white">
+                    </div>
+                </div><br>
+                </form>
+                <div class="card card2"><br>
+                    <div class="container">
+                        <h3 class="text-center text-white">{{town}}, {{country}}</h3>
+                        <h2 class="text-center text-white">{{temp}} K</h2>
+                        <p class="text-center text-white" style="font-size: large;">{{co}}</p>
+                        <p class="text-center text-white">Humidity: {{hu}} %  <span style="margin-left: 55px;"> Wind: {{wi}} km/hr</span></p><br>
+                    </div>
+                </div><br><br>
+            </div>
+        </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</body>
+</html>
