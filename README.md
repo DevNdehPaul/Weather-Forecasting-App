@@ -24,7 +24,9 @@ Other: JavaScript for interactivity
 📂 Project Structure
 Code
 Weather-Forecasting-App/
+
 │
+
 ├── app.py              # Main Flask application
 
 ├── static/             # CSS, JS, images
