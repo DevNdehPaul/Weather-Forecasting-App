@@ -26,8 +26,11 @@ Code
 Weather-Forecasting-App/
 │
 ├── app.py              # Main Flask application
-├── db.py               # Database setup (if used)
+
 ├── static/             # CSS, JS, images
+
 ├── templates/          # HTML templates
+
 ├── requirements.txt    # Python dependencies
+
 └── README.md           # Project document
